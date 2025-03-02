@@ -8,7 +8,7 @@ def word_count(get_book_text):
     word_count = 0
     for word in get_book_text.split():
         word_count += 1
-    return print(f"{word_count} words found in the document")
+    return print(f"Found {word_count} total words")
 
 ''' this function takes in a string and returns a dictionary of the number of times each character appears in the string
     Parameters: get_book_text - string
