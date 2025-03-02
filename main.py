@@ -1,7 +1,11 @@
 from stats import *
+import sys
 
 def main():
-    book_path = "books/frankenstein.txt"
+    book_path = sys.argv[1]
+    if len(sys.argv) != 2:
+        print("Usage: python main.py <book_path>")
+        sys.exit(1)
     book_text = get_book_text(book_path)
     char_count_dict = character_count(book_text)
 
